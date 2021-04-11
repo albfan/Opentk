@@ -4,6 +4,8 @@ cls
 
 cd src/OpenTK
 dotnet restore OpenTK.Standard.csproj
+cd ..
+cd ..
 
 .paket\paket.bootstrapper.exe 
 if errorlevel 1 ( 
