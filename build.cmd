@@ -1,5 +1,10 @@
+@echo on
+
 cls 
- 
+
+cd src/OpenTK
+dotnet restore OpenTK.Standard.csproj
+
 .paket\paket.bootstrapper.exe 
 if errorlevel 1 ( 
   exit /b %errorlevel% 
